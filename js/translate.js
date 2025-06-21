@@ -43,8 +43,10 @@ const translations = {
         'skills.subtitle': 'Tecnologías y herramientas que domino',
         
         // Education Section
-        'education.title': 'Formación Académica',
-        'education.subtitle': 'Mi trayectoria educativa y certificaciones',
+        'education.title': 'Formación y Certificaciones',
+        'education.subtitle': 'Mi trayectoria educativa y certificaciones más recientes',
+        'education.educationTitle': 'Educación',
+        'education.certificationsTitle': 'Certificaciones Destacadas (2023 - 2024)',
         
         // Projects Section
         'projects.title': 'Proyectos',
@@ -91,8 +93,10 @@ const translations = {
         'skills.subtitle': 'Technologies and tools I master',
         
         // Education Section
-        'education.title': 'Academic Background',
-        'education.subtitle': 'My educational journey and certifications',
+        'education.title': 'Education and Certifications',
+        'education.subtitle': 'My educational background and most recent certifications',
+        'education.educationTitle': 'Education',
+        'education.certificationsTitle': 'Featured Certifications (2023 - 2024)',
         
         // Projects Section
         'projects.title': 'Projects',
