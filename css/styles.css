@@ -489,6 +489,78 @@ body {
     line-height: 1.6;
 }
 
+.education-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+}
+
+@media (min-width: 992px) {
+    .education-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+    }
+}
+
+.education-column-title {
+    font-size: var(--font-size-2xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    position: relative;
+    padding-bottom: var(--spacing-md);
+}
+
+.education-column-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.certification-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.certification-item i {
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.certification-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.certification-item p strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
     display: grid;
@@ -517,6 +589,18 @@ body {
     justify-content: center;
     font-size: 3rem;
     color: white;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-content {
