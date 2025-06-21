@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional - Joseph Poveda Flores</title>
+    <!-- <meta name="description" content="Portafolio profesional de desarrollo web con proyectos, experiencia y contacto">
+    <meta name="keywords" content="desarrollador, full stack, web, JavaScript, React, Node.js">
+    <meta name="author" content="Joseph Poveda Flores"> -->
+    
+    <!-- Favicon
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico"> -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">JP</h1>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-translate="nav.home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-translate="nav.about">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-translate="nav.skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-translate="nav.education">Formación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-translate="nav.projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-translate="nav.contact">Contacto</a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <!-- Botón de cambio de idioma -->
+                <button class="btn btn-icon" id="languageToggle" aria-label="Cambiar idioma">
+                    <i class="fas fa-globe"></i>
+                </button>
+                
+                <!-- Botón de modo oscuro -->
+                <button class="btn btn-icon" id="darkModeToggle" aria-label="Cambiar modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Menú móvil -->
+                <button class="btn btn-icon nav-toggle" id="navToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Sección Home -->
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting" data-translate="hero.greeting">Hola, soy</span>
+                            <span class="name">Joseph Poveda Flores</span>
+                        </h1>
+                        <h2 class="hero-subtitle" data-translate="hero.subtitle">Informático</h2>
+                        <p class="hero-description" data-translate="hero.description">
+                            Soy formado en el área de informática, poseo amplia experiencia en el área de soporte técnico, además que estudié desarrollo y participé del programa de Oracle Next Education donde incrementé mi conocimiento en desarrollo. Además que me estoy iniciando en el mundo de Blockchain y Web3.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" data-translate="hero.viewProjects">
+                                Ver Proyectos
+                            </a>
+                            <a href="#contact" class="btn btn-secondary" data-translate="hero.contactMe">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <img src="assets/images/Joseph.jpg" alt="Foto de perfil de Joseph Poveda">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Joseph Poveda Flores</h3>
+                                <p data-translate="hero.location">Costa Rica</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mí -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="about.title">Sobre Mí</h2>
+                    <!-- <p class="section-subtitle" data-translate="about.subtitle">Conoce más sobre mi experiencia y habilidades</p> -->
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-translate="about.description">
+                            Técnico en soporte con más de 6 años de experiencia en infraestructura tecnológica, atención a usuarios y gestión de sistemas empresariales. Actualmente en transición hacia el desarrollo de software, con experiencia en proyectos open source, hackathones y tecnologías blockchain como Starknet y Ethereum.
+                        </p>
+                        
+                        <p data-translate="about.passion">
+                            Me destaco por la resolución de problemas, iniciativa y capacidad de adaptación a nuevos retos tecnológicos. Busco integrarme a equipos de desarrollo donde pueda aplicar mis habilidades, resolver problemas complejos y seguir creciendo como profesional tech.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades Técnicas -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="skills.title">Habilidades Técnicas</h2>
+                    <p class="section-subtitle" data-translate="skills.subtitle">Tecnologías y herramientas que domino</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Lenguajes y Tecnologías</h4>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Solidity, Cairo</li>
+                            <li>React</li>
+                            <li>Java, Python</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Web3 y Blockchain</h4>
+                        <ul>
+                            <li>Starknet, Ethereum</li>
+                            <li>Smart Contracts</li>
+                            <li>Tokenization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Microsoft 365</li>
+                            <li>Planner</li>
+                            <li>ESET Security</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Bases de Datos</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>OCI Analytics</li>
+                            <li>Documentación Técnica</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Metodologías Ágiles</h4>
+                        <ul>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                            <li>Gestión de Proyectos</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Habilidades Blandas</h4>
+                        <ul>
+                            <li>Resolución de problemas</li>
+                            <li>Aprendizaje continuo</li>
+                            <li>Comunicación efectiva</li>
+                            <li>Colaboración y trabajo remoto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formación Académica -->
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="education.title">Formación Académica</h2>
+                    <p class="section-subtitle" data-translate="education.subtitle">Mi trayectoria educativa y certificaciones</p>
+                </div>
+                
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Ingeniería en Sistemas de Computación</h3>
+                                <span class="timeline-date">2020 - 2024</span>
+                            </div>
+                            <p class="timeline-institution">Universidad Nacional de Costa Rica</p>
+                            <p class="timeline-description">
+                                Formación integral en desarrollo de software, bases de datos, redes y sistemas operativos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Certificación AWS Developer Associate</h3>
+                                <span class="timeline-date">2023</span>
+                            </div>
+                            <p class="timeline-institution">Amazon Web Services</p>
+                            <p class="timeline-description">
+                                Certificación en desarrollo de aplicaciones en la nube con AWS.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Bootcamp Full Stack Development</h3>
+                                <span class="timeline-date">2022</span>
+                            </div>
+                            <p class="timeline-institution">Coding Dojo</p>
+                            <p class="timeline-description">
+                                Programa intensivo de desarrollo web full stack con tecnologías modernas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="projects.title">Proyectos</h2>
+                    <p class="section-subtitle" data-translate="projects.subtitle">Algunos de mis trabajos más destacados</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Plataforma completa de comercio electrónico con React, Node.js y MongoDB.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Aplicación de gestión de tareas con Vue.js y Firebase para colaboración en equipo.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Analytics Dashboard</h3>
+                            <p>Dashboard interactivo para análisis de datos con D3.js y Python Flask.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mobile Weather App</h3>
+                            <p>Aplicación móvil de clima con React Native y APIs meteorológicas.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-secondary">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="contact.title">Contacto</h2>
+                    <p class="section-subtitle" data-translate="contact.subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>joseph.poveda@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>San José, Costa Rica</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Disponibilidad</h3>
+                                <p data-translate="contact.availability">Disponible para proyectos freelance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3 data-translate="contact.followMe">Sígueme en redes sociales</h3>
+                        <div class="social-grid">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="OnlyDust">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cv-download">
+                            <a href="assets/cv/cv-joseph-poveda.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i>
+                                <span data-translate="contact.downloadCV">Descargar CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Joseph Poveda. <span data-translate="footer.rights">Todos los derechos reservados.</span></p>
+                <p data-translate="footer.madeWith">Hecho con ❤️ usando HTML, CSS y JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/toggleDarkMode.js"></script>
+    <script src="js/translate.js"></script>
+</body>
+</html>
