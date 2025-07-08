@@ -207,6 +207,11 @@ body {
     text-decoration: none;
 }
 
+/* Separar el logo JP del borde izquierdo */
+.nav-brand {
+    margin-left: var(--spacing-2xl);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -242,10 +247,12 @@ body {
     width: 100%;
 }
 
+/* Separar los controles de navegación del borde derecho */
 .nav-controls {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
+    margin-right: var(--spacing-2xl); /* Aumenta la separación del borde derecho */
 }
 
 .nav-toggle {
