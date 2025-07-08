@@ -1,383 +1,119 @@
 # 🚀 Portafolio Profesional - Joseph Poveda Flores
 
-Un portafolio web moderno, responsivo y profesional desarrollado con HTML5, CSS3 y JavaScript. Incluye funcionalidades avanzadas como modo oscuro, sistema de traducción y animaciones fluidas.
+Portafolio web moderno, responsivo y profesional desarrollado con HTML5, CSS3 y JavaScript. Incluye modo oscuro, traducción dinámica (español/inglés), animaciones, enlaces a redes sociales, descarga de CV y una sección de proyectos actualizada y realista.
 
 ## ✨ Características
 
-- 🎨 **Diseño Moderno**: Interfaz limpia y profesional con colores sobrios
-- 📱 **Totalmente Responsivo**: Optimizado para móviles, tablets y escritorio
-- 🌙 **Modo Oscuro/Claro**: Cambio dinámico de tema con persistencia
-- 🌍 **Multilingüe**: Soporte para español e inglés con cambio dinámico
-- ⚡ **Rendimiento Optimizado**: Sin dependencias externas, carga rápida
-- ♿ **Accesible**: Cumple con estándares de accesibilidad web
-- 🎯 **SEO Optimizado**: Meta tags y estructura semántica
-- 📄 **Secciones Completas**: Home, Sobre mí, Formación, Proyectos y Contacto
+- 🎨 **Diseño Moderno y Minimalista**
+- 📱 **Totalmente Responsivo**
+- 🌙 **Modo Oscuro/Claro**
+- 🌍 **Multilingüe (ES/EN)**
+- ⚡ **Rendimiento Optimizado**
+- ♿ **Accesible y Navegable por Teclado**
+- 📄 **Secciones: Home, Sobre mí, Habilidades, Formación, Proyectos y Contacto**
 
 ## 📁 Estructura del Proyecto
 
 ```
 NewPortafolio/
-├── 📄 index.html              # Página principal
-├── 📁 css/
-│   └── 📄 styles.css          # Estilos principales
-├── 📁 js/
-│   ├── 📄 script.js           # Funcionalidades principales
-│   ├── 📄 toggleDarkMode.js   # Sistema de modo oscuro
-│   └── 📄 translate.js        # Sistema de traducción
-├── 📁 assets/
-│   ├── 📁 cv/                 # Archivos de CV
-│   ├── 📁 icons/              # Iconos y favicon
-│   └── 📁 images/             # Imágenes del portafolio
-└── 📄 README.md               # Este archivo
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── script.js
+│   ├── toggleDarkMode.js
+│   └── translate.js
+├── assets/
+│   ├── cv/
+│   ├── icons/
+│   └── images/
+└── README.md
 ```
 
-## 🚀 Instalación y Uso
+## 🧑‍💻 Secciones Principales
 
-### Opción 1: Ejecutar Localmente
+- **Home**: Presentación y foto de perfil
+- **Sobre mí**: Trayectoria profesional y motivación
+- **Habilidades Técnicas**: Lenguajes, tecnologías, herramientas, bases de datos, metodologías ágiles y habilidades blandas
+- **Formación y Certificaciones**: Educación formal y certificaciones recientes
+- **Proyectos**: Proyectos destacados con demo y/o código
+- **Contacto**: Email, ubicación, redes sociales y descarga de CV
 
-1. **Clona o descarga el proyecto**
-   ```bash
-   git clone [URL_DEL_REPOSITORIO]
-   cd NewPortafolio
-   ```
+## 🏆 Proyectos Destacados
 
-2. **Abre el archivo index.html**
-   - Doble clic en `index.html`
+> Cada proyecto incluye tecnologías, breve descripción y enlaces a demo y/o código.
 
-3. **Accede al portafolio**
-   - Abre tu navegador
-   - Ve a `http://localhost:PORT`
+- **StarkLotto - Lotería Descentralizada**  
+  Lotería en blockchain Starknet. [GitHub](https://github.com/FutureMindsTeam/starklotto)
+- **PetVerse (En construcción)**  
+  Plataforma Web3 para dueños de mascotas. [GitHub](https://github.com/JSK-Labs/PetVerse/tree/development)
+- **Barbería Alura**  
+  Primer web personal (HTML5, CSS3). [Demo](https://josephpdf.github.io/BarberiaAlura/) | [GitHub](https://github.com/josephpdf/BarberiaAlura/)
+- **Encriptador de texto**  
+  App para encriptar/desencriptar mensajes. [Demo](https://josephpdf.github.io/Encriptador/) | [GitHub](https://github.com/josephpdf/Encriptador)
+- **Mini Alura**  
+  Mini plataforma de cursos. [Demo](https://josephpdf.github.io/MiniAlura/) | [GitHub](https://github.com/josephpdf/MiniAlura)
+- **Recetario con Vue.js**  
+  App de recetas conectada a API. [Video](https://www.youtube.com/watch?v=3-P0bwx1W5c&t=47s) | [GitHub](https://github.com/josephpdf/Recetas)
+- **Apeperia**  
+  Web mobile first. [Demo](https://josephpdf.github.io/Apeperia/) | [GitHub](https://github.com/josephpdf/Appeperia)
+- **Fruta y Fruto**  
+  Web de recetas saludables. [Demo](https://josephpdf.github.io/Fruta-Fruto/) | [GitHub](https://github.com/josephpdf/Fruta-Fruto)
+- **TODO App (DOM con JS)**  
+  Lista de tareas con JS. [Demo](https://josephpdf.github.io/DOMconJS/) | [GitHub](https://github.com/josephpdf/DOMconJS)
+- **PetShop**  
+  Gestión de tienda de mascotas. [Demo](https://josephpdf.github.io/PetShop/) | [GitHub](https://github.com/josephpdf/PetShop)
+- **Rick & Morty API (React)**  
+  App React que consume la API pública. [GitHub](https://github.com/josephpdf/AprendiendoReact/tree/master/rick-morty)
+- **Starklings-App (Cairo)**  
+  Práctica de Cairo y Starknet. [GitHub](https://github.com/josephpdf/Starklings-App)
+- **SpeedRun Ethereum**  
+  Retos Web3, NFT y contratos inteligentes. [Demo](https://speedrun-g5l43pfnm-joseph-poveda-flores-projects.vercel.app/) | [GitHub](https://github.com/josephpdf/SpeedRun-Ethereum)
+- **San José Indoor Club - WebSite**  
+  Web institucional (no publicada). [GitHub](https://github.com/SanJoseIndoorClub/WebSite)
+- **Learn-Solidity**  
+  Práctica y ejercicios de Solidity. [GitHub](https://github.com/josephpdf/Learn-Solidity)
+- **ALL IT CR - Plataforma Empresarial**  
+  Proyecto de graduación universitaria. [Sitio](http://www.allitcr.com/)
 
-### Opción 2: Despliegue en GitHub Pages
+## 🌍 Traducción Dinámica
 
-1. **Sube el proyecto a GitHub**
-2. **Ve a Settings > Pages**
-3. **Selecciona la rama main**
-4. **Tu portafolio estará disponible en:**
-   `https://[tu-usuario].github.io/[nombre-repositorio]`
+- Cambia entre español e inglés con un clic
+- Traducciones editables en `js/translate.js`
 
-## 🎨 Personalización
+## 🌙 Modo Oscuro/Claro
 
-### 1. Enlaces de Redes Sociales
+- Alterna el tema desde el botón en la barra de navegación
+- Colores personalizables en `css/styles.css`
 
-En la sección de contacto, actualiza los enlaces:
+## 📄 CV Descargable
 
-```html
-<div class="social-grid">
-    <a href="https://linkedin.com/in/tu-perfil" class="social-link" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/tu-usuario" class="social-link" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://t.me/tu-usuario" class="social-link" aria-label="Telegram">
-        <i class="fab fa-telegram"></i>
-    </a>
-    <a href="https://onlydust.xyz/tu-perfil" class="social-link" aria-label="OnlyDust">
-        <i class="fas fa-code"></i>
-    </a>
-</div>
-```
-
-### 2. Información de Contacto
-
-```html
-<div class="contact-item">
-    <i class="fas fa-envelope"></i>
-    <div>
-        <h3>Email</h3>
-        <p>tu-email@ejemplo.com</p>
-    </div>
-</div>
-```
-
-### 3. Proyectos
-
-Edita la sección de proyectos en `index.html`:
-
-```html
-<article class="project-card">
-    <div class="project-image">
-        <i class="fas fa-project-icon"></i>
-    </div>
-    <div class="project-content">
-        <h3>Nombre del Proyecto</h3>
-        <p>Descripción del proyecto...</p>
-        <div class="project-tech">
-            <span class="tech-tag">Tecnología 1</span>
-            <span class="tech-tag">Tecnología 2</span>
-        </div>
-        <div class="project-links">
-            <a href="URL_DEMO" class="btn btn-sm btn-primary">
-                <i class="fas fa-external-link-alt"></i> Demo
-            </a>
-            <a href="URL_CODIGO" class="btn btn-sm btn-secondary">
-                <i class="fab fa-github"></i> Código
-            </a>
-        </div>
-    </div>
-</article>
-```
-
-### 4. Formación Académica
-
-```html
-<div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-        <div class="timeline-header">
-            <h3>Tu Título Académico</h3>
-            <span class="timeline-date">2020 - 2024</span>
-        </div>
-        <p class="timeline-institution">Tu Universidad</p>
-        <p class="timeline-description">
-            Descripción de tu formación...
-        </p>
-    </div>
-</div>
-```
-
-### 5. Colores y Tema
-
-Edita las variables CSS en `css/styles.css`:
-
-```css
-:root {
-    /* Colores principales */
-    --primary-color: #1e3a8a;    /* Azul marino */
-    --primary-dark: #1e40af;     /* Azul más oscuro */
-    --secondary-color: #64748b;  /* Gris */
-    --accent-color: #3b82f6;     /* Azul claro */
-    
-    /* Personaliza más colores aquí */
-}
-```
-
-### 6. CV en PDF
-
-1. **Coloca tu CV en formato PDF** en la carpeta `assets/cv/`
-2. **Actualiza el enlace** en `index.html`:
-
-```html
-<a href="assets/cv/tu-cv.pdf" class="btn btn-primary" download>
-    <i class="fas fa-download"></i>
-    <span data-translate="contact.downloadCV">Descargar CV</span>
-</a>
-```
-
-## 🌍 Sistema de Traducción
-
-### Agregar Nuevas Traducciones
-
-Edita el archivo `js/translate.js`:
-
-```javascript
-const translations = {
-    es: {
-        // Traducciones en español
-        'nueva.clave': 'Texto en español'
-    },
-    en: {
-        // Traducciones en inglés
-        'nueva.clave': 'Text in English'
-    }
-};
-```
-
-### Usar Traducciones en HTML
-
-```html
-<p data-translate="nueva.clave">Texto por defecto</p>
-```
-
-## 🌙 Sistema de Modo Oscuro
-
-### Personalizar Colores del Modo Oscuro
-
-En `css/styles.css`:
-
-```css
-[data-theme="dark"] {
-    --bg-primary: #0f172a;      /* Fondo principal oscuro */
-    --bg-secondary: #1e293b;    /* Fondo secundario oscuro */
-    --text-primary: #f8fafc;    /* Texto principal claro */
-    /* Personaliza más colores */
-}
-```
-
-### Atajos de Teclado
-
-- **Alt + T**: Alternar modo oscuro/claro
-- **Alt + L**: Cambiar idioma
+- Coloca tu CV en `assets/cv/` y actualiza el enlace en la sección de contacto
 
 ## 📱 Responsive Design
 
-El portafolio está optimizado para:
+- Optimizado para móviles, tablets y escritorio
+- Breakpoints y estilos en `css/styles.css`
 
-- 📱 **Móviles**: 320px - 768px
-- 📱 **Tablets**: 768px - 1024px
-- 💻 **Escritorio**: 1024px+
+## ⚡ Optimización y Accesibilidad
 
-### Breakpoints Principales
+- Lazy loading de imágenes
+- Navegación por teclado y atributos ARIA
+- Contraste y buenas prácticas WCAG 2.1
 
-```css
-@media (max-width: 1024px) {
-    /* Tablets y pantallas medianas */
-}
+## 🛠️ Personalización
 
-@media (max-width: 768px) {
-    /* Móviles */
-}
-
-@media (max-width: 480px) {
-    /* Móviles pequeños */
-}
-```
-
-## ⚡ Optimización de Rendimiento
-
-### Características Implementadas
-
-- ✅ **Lazy Loading**: Imágenes cargan bajo demanda
-- ✅ **CSS Optimizado**: Variables CSS y selectores eficientes
-- ✅ **JavaScript Modular**: Código organizado y reutilizable
-- ✅ **Sin Dependencias**: Solo HTML, CSS y JavaScript vanilla
-- ✅ **Compresión**: Archivos optimizados para producción
-
-### Recomendaciones Adicionales
-
-1. **Comprimir imágenes** antes de subirlas
-2. **Usar WebP** para mejor compresión
-3. **Minificar archivos** en producción
-4. **Habilitar Gzip** en el servidor
-
-## 🔧 Funcionalidades JavaScript
-
-### APIs Disponibles
-
-```javascript
-// Gestión de temas
-window.ThemeManager.getTheme()
-window.ThemeManager.setTheme('dark')
-window.ThemeManager.toggleTheme()
-
-// Gestión de idiomas
-window.LanguageManager.getLanguage()
-window.LanguageManager.setLanguage('en')
-window.LanguageManager.toggleLanguage()
-
-// Funciones del portafolio
-window.PortfolioApp.showNotification('Mensaje', 'success')
-window.PortfolioApp.addAnimation(element)
-```
-
-### Eventos Personalizados
-
-```javascript
-// Escuchar cambios de tema
-window.addEventListener('themeChanged', (e) => {
-    console.log('Tema cambiado a:', e.detail.theme);
-});
-
-// Escuchar cambios de idioma
-window.addEventListener('languageChanged', (e) => {
-    console.log('Idioma cambiado a:', e.detail.language);
-});
-```
-
-## 🎯 SEO y Meta Tags
-
-### Estructura Semántica
-
-- ✅ **Header** con navegación
-- ✅ **Main** con secciones principales
-- ✅ **Footer** con información de contacto
-- ✅ **Article** para proyectos
-- ✅ **Section** para cada sección
-
-## ♿ Accesibilidad
-
-### Características Implementadas
-
-- ✅ **Navegación por teclado**: Tab, Enter, Escape
-- ✅ **Atributos ARIA**: Roles y estados
-- ✅ **Contraste adecuado**: Cumple WCAG 2.1
-- ✅ **Skip links**: Para navegación rápida
-- ✅ **Textos alternativos**: Para imágenes
-- ✅ **Focus visible**: Indicadores de foco
-
-### Atajos de Teclado
-
-- **Tab**: Navegar entre elementos
-- **Enter**: Activar enlaces y botones
-- **Escape**: Cerrar menú móvil
-- **Alt + T**: Cambiar tema
-- **Alt + L**: Cambiar idioma
-
-## 🐛 Solución de Problemas
-
-### Problemas Comunes
-
-1. **Las traducciones no funcionan**
-   - Verifica que el archivo `translate.js` esté cargado
-   - Revisa la consola del navegador para errores
-
-2. **El modo oscuro no persiste**
-   - Verifica que localStorage esté habilitado
-   - Limpia el caché del navegador
-
-3. **El menú móvil no funciona**
-   - Verifica que el archivo `script.js` esté cargado
-   - Revisa que los IDs coincidan en HTML y JS
-
-4. **Las animaciones no se ven**
-   - Verifica que CSS esté cargado correctamente
-   - Revisa que el navegador soporte las propiedades CSS
-
-### Debug
-
-Abre la consola del navegador (F12) y usa:
-
-```javascript
-// Información del tema
-window.ThemeManager.debugThemeInfo()
-
-// Información del idioma
-window.LanguageManager.debugLanguageInfo()
-
-// Validar traducciones
-window.LanguageManager.validateTranslations()
-```
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Puedes usarlo libremente para proyectos personales y comerciales.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para contribuir:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature
-3. Commit tus cambios
-4. Push a la rama
-5. Abre un Pull Request
+- Edita textos, proyectos y datos personales en `index.html`
+- Modifica colores y fuentes en `css/styles.css`
+- Traducciones en `js/translate.js`
 
 ## 📞 Contacto
 
-- **Email**: josephpovedaflores@gmail.com.com
-- **LinkedIn**: [Tu perfil de LinkedIn]
-- **GitHub**: [Tu perfil de GitHub]
-- **Telegram**: [Tu usuario de Telegram]
-
-## 🙏 Agradecimientos
-
-- **Font Awesome** por los iconos
-- **Google Fonts** por las tipografías
-- **Comunidad de desarrolladores** por las mejores prácticas
+- **Email**: josephpovedaflores@gmail.com
+- **LinkedIn**: [Joseph Poveda Flores](https://www.linkedin.com/in/joseph-poveda-flores/)
+- **GitHub**: [https://github.com/josephpdf](https://github.com/josephpdf)
+- **Telegram**: [JosephPDF](https://t.me/josephpdf)
 
 ---
 
-**¡Gracias por usar este portafolio!** 🚀
-
-Si te gustó el proyecto, considera darle una ⭐ en GitHub.
+**¡Gracias por visitar mi portafolio!** 🚀
