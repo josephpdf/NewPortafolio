@@ -1,6 +1,6 @@
 /**
  * Toggle Dark Mode - Funcionalidad de cambio de tema
- * Maneja el cambio entre modo claro y oscuro con persistencia
+ * Maneja el cambio entre modo claro, oscuro y sistema con persistencia
  */
 
 // ===== VARIABLES GLOBALES =====
@@ -16,32 +16,47 @@ const THEME_ATTRIBUTE = 'data-theme';
 
 /**
  * Función para obtener el tema actual del localStorage
- * @returns {string} - 'dark' o 'light'
+ * @returns {string} - 'dark', 'light' o 'system'
  */
 function getCurrentTheme() {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
     
     // Si hay un tema guardado, usarlo
-    if (savedTheme) {
+    if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light' || savedTheme === 'system')) {
         return savedTheme;
     }
     
-    // Si no hay tema guardado, detectar preferencia del sistema
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
+    // Por defecto, usar sistema
+    return 'system';
+}
+
+/**
+ * Función para obtener el tema efectivo (resuelve 'system')
+ * @returns {string} - 'dark' o 'light'
+ */
+function getEffectiveTheme() {
+    const theme = getCurrentTheme();
+    
+    if (theme === 'system') {
+        // Detectar preferencia del sistema
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
     }
     
-    // Por defecto, modo claro
-    return 'light';
+    return theme;
 }
 
 /**
  * Función para aplicar el tema
- * @param {string} theme - 'dark' o 'light'
+ * @param {string} theme - 'dark', 'light' o 'system'
  */
 function applyTheme(theme) {
+    const effectiveTheme = theme === 'system' ? getEffectiveTheme() : theme;
+    
     // Aplicar atributo al HTML
-    htmlElement.setAttribute(THEME_ATTRIBUTE, theme);
+    htmlElement.setAttribute(THEME_ATTRIBUTE, effectiveTheme);
     
     // Guardar en localStorage
     localStorage.setItem(THEME_STORAGE_KEY, theme);
@@ -50,7 +65,7 @@ function applyTheme(theme) {
     updateToggleIcon(theme);
     
     // Disparar evento personalizado para otros scripts
-    window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
+    window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme, effectiveTheme } }));
     
     // Agregar clase de transición temporal
     bodyElement.classList.add('theme-transitioning');
@@ -60,19 +75,27 @@ function applyTheme(theme) {
 }
 
 /**
- * Función para alternar entre temas
+ * Función para alternar entre temas (claro -> oscuro -> sistema -> claro)
  */
 function toggleTheme() {
     const currentTheme = getCurrentTheme();
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    let newTheme;
+    
+    // Ciclo: claro -> oscuro -> sistema -> claro
+    switch (currentTheme) {
+        case 'light':
+            newTheme = 'dark';
+            break;
+        case 'dark':
+            newTheme = 'system';
+            break;
+        case 'system':
+        default:
+            newTheme = 'light';
+            break;
+    }
     
     applyTheme(newTheme);
-    
-    // Mostrar notificación
-    //const message = newTheme === 'dark' ? 'Modo oscuro activado' : 'Modo claro activado';
-    //if (window.PortfolioApp && window.PortfolioApp.showNotification) {
-        //window.PortfolioApp.showNotification(message, 'info');
-    //}
 }
 
 /**
@@ -86,15 +109,22 @@ function updateToggleIcon(theme) {
     if (!icon) return;
     
     // Remover clases existentes
-    icon.classList.remove('fa-moon', 'fa-sun');
+    icon.classList.remove('fa-moon', 'fa-sun', 'fa-desktop');
     
     // Agregar clase correspondiente
-    if (theme === 'dark') {
-        icon.classList.add('fa-sun');
-        darkModeToggle.setAttribute('aria-label', 'Cambiar a modo claro');
-    } else {
-        icon.classList.add('fa-moon');
-        darkModeToggle.setAttribute('aria-label', 'Cambiar a modo oscuro');
+    switch (theme) {
+        case 'dark':
+            icon.classList.add('fa-sun');
+            darkModeToggle.setAttribute('aria-label', 'Cambiar a modo claro');
+            break;
+        case 'light':
+            icon.classList.add('fa-moon');
+            darkModeToggle.setAttribute('aria-label', 'Cambiar a modo oscuro');
+            break;
+        case 'system':
+            icon.classList.add('fa-desktop');
+            darkModeToggle.setAttribute('aria-label', 'Cambiar a modo claro');
+            break;
     }
 }
 
@@ -105,10 +135,15 @@ function syncWithSystemPreference() {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     
     const handleChange = (e) => {
-        // Solo cambiar si no hay tema guardado manualmente
-        if (!localStorage.getItem(THEME_STORAGE_KEY)) {
+        // Solo cambiar si el tema actual es 'system'
+        if (getCurrentTheme() === 'system') {
             const newTheme = e.matches ? 'dark' : 'light';
-            applyTheme(newTheme);
+            htmlElement.setAttribute(THEME_ATTRIBUTE, newTheme);
+            
+            // Disparar evento
+            window.dispatchEvent(new CustomEvent('themeChanged', { 
+                detail: { theme: 'system', effectiveTheme: newTheme } 
+            }));
         }
     };
     
@@ -146,7 +181,7 @@ function initThemeSystem() {
     // Sincronizar con preferencias del sistema
     syncWithSystemPreference();
     
-    console.log('🌙 Sistema de temas inicializado');
+    console.log('🌙 Sistema de temas inicializado con tres opciones');
 }
 
 // ===== FUNCIONES DE UTILIDAD =====
@@ -160,14 +195,31 @@ function getTheme() {
 }
 
 /**
+ * Función para obtener el tema efectivo
+ * @returns {string} - Tema efectivo (dark/light)
+ */
+function getEffectiveTheme() {
+    const theme = getCurrentTheme();
+    
+    if (theme === 'system') {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
+    }
+    
+    return theme;
+}
+
+/**
  * Función para establecer un tema específico
  * @param {string} theme - Tema a establecer
  */
 function setTheme(theme) {
-    if (theme === 'dark' || theme === 'light') {
+    if (theme === 'dark' || theme === 'light' || theme === 'system') {
         applyTheme(theme);
     } else {
-        console.warn('Tema inválido. Use "dark" o "light"');
+        console.warn('Tema inválido. Use "dark", "light" o "system"');
     }
 }
 
@@ -176,7 +228,7 @@ function setTheme(theme) {
  * @returns {boolean} - True si el modo oscuro está activo
  */
 function isDarkMode() {
-    return getCurrentTheme() === 'dark';
+    return getEffectiveTheme() === 'dark';
 }
 
 // ===== FUNCIONES DE ANIMACIÓN =====
@@ -203,26 +255,24 @@ function animateThemeChange() {
     
     document.body.appendChild(overlay);
     
-    // Animar entrada
-    requestAnimationFrame(() => {
+    // Animar overlay
+    setTimeout(() => {
         overlay.style.opacity = '1';
-        
-        // Animar salida después de un breve delay
+    }, 10);
+    
+    setTimeout(() => {
+        overlay.style.opacity = '0';
         setTimeout(() => {
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                if (document.body.contains(overlay)) {
-                    document.body.removeChild(overlay);
-                }
-            }, 300);
-        }, 150);
-    });
+            document.body.removeChild(overlay);
+        }, 300);
+    }, 150);
 }
 
 // ===== FUNCIONES DE ACCESIBILIDAD =====
 
 /**
- * Función para manejar navegación por teclado para el toggle
+ * Función para manejar atajos de teclado
+ * @param {KeyboardEvent} e - Evento de teclado
  */
 function handleKeyboardThemeToggle(e) {
     // Alt + T para alternar tema
@@ -232,74 +282,39 @@ function handleKeyboardThemeToggle(e) {
     }
 }
 
-// ===== FUNCIONES DE PERSISTENCIA =====
-
-/**
- * Función para exportar configuración de tema
- * @returns {Object} - Configuración actual
- */
-function exportThemeConfig() {
-    return {
-        theme: getCurrentTheme(),
-        timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent
-    };
-}
-
-/**
- * Función para importar configuración de tema
- * @param {Object} config - Configuración a importar
- */
-function importThemeConfig(config) {
-    if (config && config.theme) {
-        setTheme(config.theme);
-    }
-}
-
 // ===== FUNCIONES DE DEBUG =====
 
 /**
  * Función para mostrar información de debug del tema
  */
 function debugThemeInfo() {
-    const info = {
-        currentTheme: getCurrentTheme(),
-        savedTheme: localStorage.getItem(THEME_STORAGE_KEY),
-        systemPrefersDark: window.matchMedia('(prefers-color-scheme: dark)').matches,
-        htmlAttribute: htmlElement.getAttribute(THEME_ATTRIBUTE),
-        timestamp: new Date().toISOString()
-    };
-    
-    console.log('🎨 Información del tema:', info);
-    return info;
+    console.log('=== Información del Tema ===');
+    console.log('Tema guardado:', getCurrentTheme());
+    console.log('Tema efectivo:', getEffectiveTheme());
+    console.log('Preferencia del sistema:', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    console.log('Atributo HTML:', htmlElement.getAttribute(THEME_ATTRIBUTE));
+    console.log('LocalStorage:', localStorage.getItem(THEME_STORAGE_KEY));
 }
 
-// ===== EVENT LISTENERS =====
+// ===== INICIALIZACIÓN =====
 
 // Inicializar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', initThemeSystem);
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeSystem);
+} else {
+    initThemeSystem();
+}
 
-// Manejar navegación por teclado
+// Agregar event listener para atajos de teclado
 document.addEventListener('keydown', handleKeyboardThemeToggle);
 
-// Manejar cambios en el almacenamiento (para sincronización entre pestañas)
-window.addEventListener('storage', function(e) {
-    if (e.key === THEME_STORAGE_KEY) {
-        const newTheme = e.newValue || 'light';
-        applyTheme(newTheme);
-    }
-});
-
-// ===== EXPORTAR FUNCIONES =====
-
-// Hacer funciones disponibles globalmente
+// Exportar funciones para uso global
 window.ThemeManager = {
     getTheme,
+    getEffectiveTheme,
     setTheme,
     toggleTheme,
     isDarkMode,
-    exportThemeConfig,
-    importThemeConfig,
     debugThemeInfo
 };
 
@@ -353,10 +368,12 @@ function migrateOldThemeSettings() {
         const oldValue = localStorage.getItem(key);
         if (oldValue) {
             // Migrar valor antiguo a nuevo formato
-            let newTheme = 'light';
+            let newTheme = 'system'; // Default to system
             
             if (oldValue === 'true' || oldValue === 'dark') {
                 newTheme = 'dark';
+            } else if (oldValue === 'false' || oldValue === 'light') {
+                newTheme = 'light';
             }
             
             // Aplicar tema migrado
