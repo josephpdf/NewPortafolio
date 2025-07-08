@@ -741,9 +741,9 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary) !important;
     border-top: 1px solid var(--border-color);
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-xl) 0;
     text-align: center;
 }
 
@@ -914,4 +914,26 @@ body {
     .section {
         padding: var(--spacing-lg) 0;
     }
+}
+
+/* Alternar color de fondo entre secciones principales */
+.hero,
+.about {
+    background-color: var(--bg-primary);
+}
+
+.skills-section {
+    background-color: var(--bg-secondary);
+}
+
+.education {
+    background-color: var(--bg-primary);
+}
+
+.projects {
+    background-color: var(--bg-secondary);
+}
+
+.contact {
+    background-color: var(--bg-primary);
 }
