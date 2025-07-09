@@ -63,7 +63,7 @@ const translations = {
         
         // Footer
         'footer.rights': 'Todos los derechos reservados.',
-        'footer.madeWith': 'Realizado con HTML, CSS y JavaScript',
+        'footer.madeWith': 'Desarrollado con HTML, CSS y JavaScript',
 
         // Skills Section (Spanish)
         'skills.languagesTitle': 'Lenguajes y Tecnologías',
@@ -100,11 +100,19 @@ const translations = {
         'skills.collaboration': 'Colaboración y trabajo remoto',
 
         // Certificaciones
-        'cert.blockchain': '<strong>Blockchain, Solidity y Gobernanza</strong> (Universidad CENFOTEC)',
-        'cert.oracle': '<strong>React, MySQL, OCI, Java OO, Spring Boot, IA Generativa</strong> (Oracle Next Education + Alura Latam)',
-        'cert.python': '<strong>Python Essentials y Data Science Intro</strong> (CISCO)',
-        'cert.microsoft': '<strong>Microsoft 365</strong> (Udemy), <strong>Excel Avanzado</strong> (Instituto Municipal de Educación de Cartago)',
-        'cert.english': '<strong>Inglés básico digital – B2+</strong> (Instituto Municipal de Educación de Cartago)',
+        'cert.blockchain-title': 'Blockchain, Solidity y Gobernanza ',
+        'cert.blockchain-description': '(Universidad CENFOTEC)',
+        'cert.oracle-title': 'React, MySQL, OCI, Java OO, Spring Boot, IA Generativa ',
+        'cert.oracle-description': '(Oracle Next Education + Alura Latam)',
+        'cert.python-title': 'Python Essentials y Data Science Intro ',
+        'cert.python-description': '(CISCO)',
+        'cert.microsoft-title': 'Microsoft 365 ',
+        'cert.microsoft-description': '(Udemy)',
+        'cert.excel-title': 'Excel Avanzado ',
+        'cert.excel-description': '(Instituto Municipal de Educación de Cartago)',
+        'cert.english-title': 'Inglés básico digital – B2+ ',
+        'cert.english-description': '(Instituto Municipal de Educación de Cartago)',
+        
 
         // Ejemplo de títulos de educación (si quieres traducirlos)
         'education.diploma': 'Diplomado en Tecnologías de Información',
@@ -316,11 +324,18 @@ const translations = {
         'skills.collaboration': 'Collaboration and Remote Work',
 
         // Certificaciones
-        'cert.blockchain': '<strong>Blockchain, Solidity and Governance</strong> (CENFOTEC University)',
-        'cert.oracle': '<strong>React, MySQL, OCI, Java OOP, Spring Boot, Generative AI</strong> (Oracle Next Education + Alura Latam)',
-        'cert.python': '<strong>Python Essentials and Data Science Intro</strong> (CISCO)',
-        'cert.microsoft': '<strong>Microsoft 365</strong> (Udemy), <strong>Advanced Excel</strong> (Municipal Institute of Education of Cartago)',
-        'cert.english': '<strong>Digital Basic English – B2+</strong> (Municipal Institute of Education of Cartago)',
+        'cert.blockchain-title': 'Blockchain, Solidity and Governance ',
+        'cert.blockchain-description': '(CENFOTEC University)',
+        'cert.oracle-title': 'React, MySQL, OCI, Java OOP, Spring Boot, Generative AI ',
+        'cert.oracle-description': '(Oracle Next Education + Alura Latam)',
+        'cert.python-title': 'Python Essentials and Data Science Intro ',
+        'cert.python-description': '(CISCO)',
+        'cert.microsoft-title': 'Microsoft 365 ',
+        'cert.microsoft-description': '(Udemy)',
+        'cert.excel-title': 'Advanced Excel ',
+        'cert.excel-description': '(Municipal Institute of Education of Cartago)',
+        'cert.english-title': 'Digital Basic English – B2+ ',
+        'cert.english-description': '(Municipal Institute of Education of Cartago)',
 
         // Ejemplo de títulos de educación (si quieres traducirlos)
         'education.diploma': 'Diploma in Information Technologies',
