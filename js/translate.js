@@ -242,7 +242,7 @@ const translations = {
         // Hero Section
         'hero.greeting': 'Hello, I\'m',
         'hero.subtitle': 'IT Professional',
-        'hero.description': 'I am a formated IT professional with extensive experience in technical support, and I have studied development and participated in the Oracle Next Education program where I increased my knowledge in development. In addition, I am starting to work in the world of Blockchain and Web3.',
+        'hero.description': 'I have a background in the field of computer science and extensive experience in technical support. I also studied development and participated in the Oracle Next Education program, where I expanded my knowledge in software development. Additionally, I am beginning to explore the world of Blockchain and Web3.',
         'hero.viewProjects': 'View Projects',
         'hero.contactMe': 'Contact Me',
         'hero.location': 'Costa Rica',
@@ -250,8 +250,8 @@ const translations = {
         // About Section
         'about.title': 'About Me',
         'about.subtitle': 'Learn more about my experience and skills',
-        'about.description': 'IT professional with over 6 years of experience in technical support, infrastructure, user support, and enterprise system management. Currently transitioning to software development, with experience in open source projects, hackathons, and blockchain technologies like Starknet and Ethereum.',
-        'about.passion': 'I stand out for problem-solving, initiative, and the ability to adapt to new technological challenges. I seek to integrate into development teams where I can apply my skills, solve complex problems, and continue growing as a tech professional.',
+        'about.description': 'Technical support specialist with over 6 years of experience in IT infrastructure, user support, and enterprise systems management. Currently transitioning into software development, with experience in open-source projects, hackathons, and blockchain technologies such as Starknet and Ethereum.',
+        'about.passion': 'I stand out for my problem-solving skills, initiative, and ability to adapt to new technological challenges. I am seeking to join development teams where I can apply my skills, tackle complex problems, and continue growing as a tech professional.',
         'about.skills': 'Technical Skills',
         
         // Skills Section
