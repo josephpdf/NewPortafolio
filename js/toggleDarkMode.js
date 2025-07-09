@@ -5,7 +5,7 @@
 
 // ===== VARIABLES GLOBALES =====
 const darkModeToggle = document.getElementById('darkModeToggle');
-const htmlElement = document.documentElement;
+const htmlElementDark = document.documentElement;
 const bodyElement = document.body;
 
 // ===== CONFIGURACIÓN =====
@@ -56,7 +56,7 @@ function applyTheme(theme, save = true) {
     const effectiveTheme = theme === 'system' ? getEffectiveTheme() : theme;
     
     // Aplicar atributo al HTML
-    htmlElement.setAttribute(THEME_ATTRIBUTE, effectiveTheme);
+    htmlElementDark.setAttribute(THEME_ATTRIBUTE, effectiveTheme);
     
     // Guardar en localStorage
     if (save) {
@@ -140,7 +140,7 @@ function syncWithSystemPreference() {
         // Solo cambiar si el tema actual es 'system'
         if (getCurrentTheme() === 'system') {
             const newTheme = e.matches ? 'dark' : 'light';
-            htmlElement.setAttribute(THEME_ATTRIBUTE, newTheme);
+            htmlElementDark.setAttribute(THEME_ATTRIBUTE, newTheme);
             
             // Disparar evento
             window.dispatchEvent(new CustomEvent('themeChanged', { 
@@ -298,7 +298,7 @@ function debugThemeInfo() {
     console.log('Tema guardado:', getCurrentTheme());
     console.log('Tema efectivo:', getEffectiveTheme());
     console.log('Preferencia del sistema:', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    console.log('Atributo HTML:', htmlElement.getAttribute(THEME_ATTRIBUTE));
+    console.log('Atributo HTML:', htmlElementDark.getAttribute(THEME_ATTRIBUTE));
     console.log('LocalStorage:', localStorage.getItem(THEME_STORAGE_KEY));
 }
 

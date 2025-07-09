@@ -25,17 +25,17 @@ const translations = {
         
         // Hero Section
         'hero.greeting': 'Hola, soy',
-        'hero.subtitle': 'Desarrollador Full Stack',
-        'hero.description': 'Apasionado por crear soluciones web innovadoras y experiencias de usuario excepcionales. Especializado en JavaScript, React, Node.js y tecnologías modernas del desarrollo web.',
+        'hero.subtitle': 'Informático',
+        'hero.description': 'Soy formado en el área de informática, poseo amplia experiencia en el área de soporte técnico, además que estudié desarrollo y participé del programa de Oracle Next Education donde incrementé mi conocimiento en desarrollo. Además que me estoy iniciando en el mundo de Blockchain y Web3.',
         'hero.viewProjects': 'Ver Proyectos',
         'hero.contactMe': 'Contactar',
-        'hero.location': 'San José, Costa Rica',
+        'hero.location': 'Costa Rica',
         
         // About Section
         'about.title': 'Sobre Mí',
         'about.subtitle': 'Conoce más sobre mi experiencia y habilidades',
-        'about.description': 'Soy un desarrollador Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web. Me apasiona crear soluciones tecnológicas que resuelvan problemas reales y mejoren la vida de las personas.',
-        'about.passion': 'Mi enfoque se centra en escribir código limpio, mantenible y escalable, utilizando las mejores prácticas y tecnologías modernas. Disfruto trabajando en equipo y aprendiendo nuevas tecnologías constantemente.',
+        'about.description': 'Técnico en soporte con más de 6 años de experiencia en infraestructura tecnológica, atención a usuarios y gestión de sistemas empresariales. Actualmente en transición hacia el desarrollo de software, con experiencia en proyectos open source, hackathones y tecnologías blockchain como Starknet y Ethereum.',
+        'about.passion': 'Me destaco por la resolución de problemas, iniciativa y capacidad de adaptación a nuevos retos tecnológicos. Busco integrarme a equipos de desarrollo donde pueda aplicar mis habilidades, resolver problemas complejos y seguir creciendo como profesional tech.',
         'about.skills': 'Habilidades Técnicas',
         
         // Skills Section
@@ -46,7 +46,7 @@ const translations = {
         'education.title': 'Formación y Certificaciones',
         'education.subtitle': 'Mi trayectoria educativa y certificaciones más recientes',
         'education.educationTitle': 'Educación',
-        'education.certificationsTitle': 'Certificaciones Destacadas (2023 - 2024)',
+        'education.certificationsTitle': 'Certificaciones Destacadas',
         
         // Projects Section
         'projects.title': 'Proyectos',
@@ -55,13 +55,179 @@ const translations = {
         // Contact Section
         'contact.title': 'Contacto',
         'contact.subtitle': '¿Tienes un proyecto en mente? ¡Hablemos!',
-        'contact.availability': 'Disponible para proyectos freelance',
+        'contact.location-title': 'Ubicación',
+        'contact.availability-title': 'Disponibilidad',
+        'contact.availability-description': 'Disponible para proyectos freelance',
         'contact.followMe': 'Sígueme en redes sociales',
         'contact.downloadCV': 'Descargar CV',
         
         // Footer
         'footer.rights': 'Todos los derechos reservados.',
-        'footer.madeWith': 'Hecho con ❤️ usando HTML, CSS y JavaScript'
+        'footer.madeWith': 'Realizado con HTML, CSS y JavaScript',
+
+        // Skills Section (Spanish)
+        'skills.languagesTitle': 'Lenguajes y Tecnologías',
+        'skills.htmlcssjs': 'HTML, CSS, JavaScript',
+        'skills.soliditycairo': 'Solidity, Cairo',
+        'skills.react': 'React',
+        'skills.javapython': 'Java, Python',
+
+        'skills.web3Title': 'Web3 y Blockchain',
+        'skills.starkneteth': 'Starknet, Ethereum',
+        'skills.smartcontracts': 'Smart Contracts',
+        'skills.tokenization': 'Tokenización',
+
+        'skills.toolsTitle': 'Herramientas',
+        'skills.github': 'GitHub',
+        'skills.microsoft365': 'Microsoft 365',
+        'skills.planner': 'Planner',
+        'skills.eset': 'ESET Security',
+
+        'skills.databasesTitle': 'Bases de Datos',
+        'skills.mysql': 'MySQL',
+        'skills.oci': 'OCI Analytics',
+        'skills.documentation': 'Documentación Técnica',
+
+        'skills.agileTitle': 'Metodologías Ágiles',
+        'skills.scrum': 'Scrum',
+        'skills.kanban': 'Kanban',
+        'skills.projectmgmt': 'Gestión de Proyectos',
+
+        'skills.softskillsTitle': 'Habilidades Blandas',
+        'skills.problemSolving': 'Resolución de problemas',
+        'skills.learning': 'Aprendizaje continuo',
+        'skills.communication': 'Comunicación efectiva',
+        'skills.collaboration': 'Colaboración y trabajo remoto',
+
+        // Certificaciones
+        'cert.blockchain': '<strong>Blockchain, Solidity y Gobernanza</strong> (Universidad CENFOTEC)',
+        'cert.oracle': '<strong>React, MySQL, OCI, Java OO, Spring Boot, IA Generativa</strong> (Oracle Next Education + Alura Latam)',
+        'cert.python': '<strong>Python Essentials y Data Science Intro</strong> (CISCO)',
+        'cert.microsoft': '<strong>Microsoft 365</strong> (Udemy), <strong>Excel Avanzado</strong> (Instituto Municipal de Educación de Cartago)',
+        'cert.english': '<strong>Inglés básico digital – B2+</strong> (Instituto Municipal de Educación de Cartago)',
+
+        // Ejemplo de títulos de educación (si quieres traducirlos)
+        'education.diploma': 'Diplomado en Tecnologías de Información',
+        'education.technical': 'Técnico medio en Mantenimiento y Reparación de equipo de Cómputo',
+        'education.colegio': 'Colegio Universitario de Cartago',
+        'education.institutoJimenez': 'Instituto Jiménez',
+
+        // Projects Section (Spanish)
+        'project.starklotto.title': 'StarkLotto - Lotería Descentralizada',
+        'project.starklotto.desc': 'La lotería descentralizada más innovadora en la blockchain de Starknet. Juega, gana y sé parte del futuro.',
+        'project.starklotto.tech1': 'Starknet',
+        'project.starklotto.tech2': 'Blockchain',
+        'project.starklotto.tech3': 'React',
+        'project.starklotto.tech4': 'Web3',
+        'project.starklotto.tech5': 'Cairo',
+
+        // PetVerse
+        'project.petverse.title': 'PetVerse (En construcción)',
+        'project.petverse.desc': 'Plataforma descentralizada para conectar dueños de mascotas con servicios locales confiables (veterinarios, paseadores, tiendas, etc). Construido con tecnologías Web3 modernas sobre Starknet.',
+        'project.petverse.tech1': 'Starknet',
+        'project.petverse.tech2': 'Cairo',
+        'project.petverse.tech3': 'React',
+        'project.petverse.tech4': 'Next.js',
+        'project.petverse.tech5': 'Web3',
+
+        // Barbería Alura
+        'project.barberia.title': 'Barbería Alura',
+        'project.barberia.desc': 'Primer página web desarrollada como parte de la formación en Oracle Next Education (Alura Latam). Proyecto enfocado en HTML5 y CSS3, aplicando buenas prácticas de maquetación y estilos.',
+        'project.barberia.tech1': 'HTML5',
+        'project.barberia.tech2': 'CSS3',
+
+        // Encriptador de texto
+        'project.encriptador.title': 'Encriptador de texto',
+        'project.encriptador.desc': 'Aplicación web para encriptar y desencriptar mensajes de texto. Proyecto realizado como parte de la formación en el curso Oracle Next Education (Alura Latam).',
+        'project.encriptador.tech1': 'HTML',
+        'project.encriptador.tech2': 'CSS',
+        'project.encriptador.tech3': 'JavaScript',
+
+        // Mini Alura
+        'project.miniAlura.title': 'Mini Alura',
+        'project.miniAlura.desc': 'Mini plataforma de cursos inspirada en Alura. Proyecto de práctica realizado como parte de la formación de front end en Oracle Next Education (Alura Latam).',
+        'project.miniAlura.tech1': 'HTML',
+        'project.miniAlura.tech2': 'CSS',
+
+        // Recetario con Vue.js
+        'project.recetario.title': 'Recetario con Vue.js',
+        'project.recetario.desc': 'Aplicación de recetas que muestra la conexión de Vue.js con una API externa. Proyecto creado para un taller universitario donde expuse sobre el framework Vue.js.',
+        'project.recetario.tech1': 'Vue.js',
+        'project.recetario.tech2': 'JavaScript',
+        'project.recetario.tech3': 'CSS',
+
+        // Apeperia
+        'project.apeperia.title': 'Apeperia',
+        'project.apeperia.desc': 'Proyecto front end desarrollado con la modalidad mobile first como parte de la formación de front end en Oracle Next Education (Alura Latam). Simula una empresa de desarrollo de aplicaciones móviles y web, con enfoque en diseño responsivo y experiencia de usuario.',
+        'project.apeperia.tech1': 'HTML',
+        'project.apeperia.tech2': 'CSS',
+
+        // Fruta y Fruto
+        'project.frutaFruto.title': 'Fruta y Fruto',
+        'project.frutaFruto.desc': 'Proyecto de la formación de front end de Oracle Next Education (Alura Latam), enfocado en arquitectura CSS y buenas prácticas. Sitio de recetas saludables y aprovechamiento de alimentos.',
+        'project.frutaFruto.tech1': 'HTML',
+        'project.frutaFruto.tech2': 'CSS',
+
+        // TODO App
+        'project.todoApp.title': 'TODO App (DOM con JS)',
+        'project.todoApp.desc': 'Aplicación de lista de tareas para practicar manipulación del DOM con JavaScript. Proyecto realizado como parte del curso de Oracle Next Education (Alura Latam).',
+        'project.todoApp.tech1': 'HTML',
+        'project.todoApp.tech2': 'CSS',
+        'project.todoApp.tech3': 'JavaScript',
+
+        // PetShop
+        'project.petShop.title': 'PetShop',
+        'project.petShop.desc': 'Aplicación web para gestión de una tienda de mascotas, desarrollada como parte de la formación en Oracle Next Education (Alura Latam). Permite registrar productos, clientes y realizar validaciones de formularios.',
+        'project.petShop.tech1': 'HTML',
+        'project.petShop.tech2': 'CSS',
+        'project.petShop.tech3': 'JavaScript',
+
+        // Rick & Morty API
+        'project.rickMorty.title': 'Rick & Morty API (React)',
+        'project.rickMorty.desc': 'Aplicación web desarrollada en React que consume la API pública de Rick & Morty para mostrar personajes, episodios y ubicaciones de la serie. Permite filtrar y buscar información de manera interactiva.',
+        'project.rickMorty.tech1': 'React',
+        'project.rickMorty.tech2': 'JavaScript',
+        'project.rickMorty.tech3': 'API REST',
+
+        // Starklings-App
+        'project.starklings.title': 'Starklings-App (Cairo)',
+        'project.starklings.desc': 'Repositorio donde practico el lenguaje Cairo resolviendo ejercicios de Starklings, una colección de desafíos para aprender desarrollo en Starknet y conceptos de blockchain.',
+        'project.starklings.tech1': 'Cairo',
+        'project.starklings.tech2': 'Starknet',
+        'project.starklings.tech3': 'Blockchain',
+
+        // SpeedRun Ethereum
+        'project.speedRun.title': 'SpeedRun Ethereum',
+        'project.speedRun.desc': 'Práctica intensiva de desarrollo Web3 y contratos inteligentes en Ethereum, utilizando Scaffold-ETH 2, Hardhat y Next.js. Incluye retos de NFT, wallets y despliegue en testnet. Proyecto con frontend y smart contracts propios.',
+        'project.speedRun.tech1': 'Ethereum',
+        'project.speedRun.tech2': 'Solidity',
+        'project.speedRun.tech3': 'Next.js',
+        'project.speedRun.tech4': 'Hardhat',
+        'project.speedRun.tech5': 'Web3',
+
+        // San José Indoor Club
+        'project.sanJoseIndoorClub.title': 'San José Indoor Club - WebSite',
+        'project.sanJoseIndoorClub.desc': 'Desarrollo completo de la página web institucional para el San José Indoor Club. Proyecto realizado desde cero con tecnologías modernas (TypeScript, Vite, Tailwind CSS), enfocado en brindar una experiencia atractiva y funcional para los usuarios del club. El proyecto no llegó a publicarse en producción.',
+        'project.sanJoseIndoorClub.tech1': 'TypeScript',
+        'project.sanJoseIndoorClub.tech2': 'Vite',
+        'project.sanJoseIndoorClub.tech3': 'Tailwind CSS',
+        'project.sanJoseIndoorClub.tech4': 'HTML',
+        'project.sanJoseIndoorClub.tech5': 'CSS',
+
+        // Learn-Solidity
+        'project.learnSolidity.title': 'Learn-Solidity',
+        'project.learnSolidity.desc': 'Repositorio donde practico y aprendo el lenguaje Solidity, desarrollando y probando smart contracts en la blockchain de Ethereum. Incluye ejercicios y ejemplos de cursos y documentación oficial.',
+        'project.learnSolidity.tech1': 'Solidity',
+        'project.learnSolidity.tech2': 'Ethereum',
+        'project.learnSolidity.tech3': 'Smart Contracts',
+
+        // ALL IT CR
+        'project.allItCr.title': 'ALL IT CR - Plataforma Empresarial',
+        'project.allItCr.desc': 'Proyecto de graduación universitaria: desarrollo completo de la plataforma web para ALL IT CR, empresa de soluciones integrales en tecnología, soporte, hosting y facturación electrónica. Incluye diseño, desarrollo y despliegue del sitio institucional y catálogo de servicios.',
+        'project.allItCr.tech1': 'HTML',
+        'project.allItCr.tech2': 'CSS',
+        'project.allItCr.tech3': 'JavaScript',
+        'project.allItCr.tech4': 'Web Hosting',
     },
     
     en: {
@@ -75,17 +241,17 @@ const translations = {
         
         // Hero Section
         'hero.greeting': 'Hello, I\'m',
-        'hero.subtitle': 'Full Stack Developer',
-        'hero.description': 'Passionate about creating innovative web solutions and exceptional user experiences. Specialized in JavaScript, React, Node.js and modern web development technologies.',
+        'hero.subtitle': 'IT Professional',
+        'hero.description': 'I am a formated IT professional with extensive experience in technical support, and I have studied development and participated in the Oracle Next Education program where I increased my knowledge in development. In addition, I am starting to work in the world of Blockchain and Web3.',
         'hero.viewProjects': 'View Projects',
         'hero.contactMe': 'Contact Me',
-        'hero.location': 'San José, Costa Rica',
+        'hero.location': 'Costa Rica',
         
         // About Section
         'about.title': 'About Me',
         'about.subtitle': 'Learn more about my experience and skills',
-        'about.description': 'I am a Full Stack developer with over 5 years of experience in web application development. I am passionate about creating technological solutions that solve real problems and improve people\'s lives.',
-        'about.passion': 'My approach focuses on writing clean, maintainable and scalable code, using best practices and modern technologies. I enjoy working in teams and constantly learning new technologies.',
+        'about.description': 'IT professional with over 6 years of experience in technical support, infrastructure, user support, and enterprise system management. Currently transitioning to software development, with experience in open source projects, hackathons, and blockchain technologies like Starknet and Ethereum.',
+        'about.passion': 'I stand out for problem-solving, initiative, and the ability to adapt to new technological challenges. I seek to integrate into development teams where I can apply my skills, solve complex problems, and continue growing as a tech professional.',
         'about.skills': 'Technical Skills',
         
         // Skills Section
@@ -96,7 +262,7 @@ const translations = {
         'education.title': 'Education and Certifications',
         'education.subtitle': 'My educational background and most recent certifications',
         'education.educationTitle': 'Education',
-        'education.certificationsTitle': 'Featured Certifications (2023 - 2024)',
+        'education.certificationsTitle': 'Featured Certifications',
         
         // Projects Section
         'projects.title': 'Projects',
@@ -105,13 +271,179 @@ const translations = {
         // Contact Section
         'contact.title': 'Contact',
         'contact.subtitle': 'Have a project in mind? Let\'s talk!',
-        'contact.availability': 'Available for freelance projects',
+        'contact.location-title': 'Location',
+        'contact.availability-title': 'Availability',
+        'contact.availability-description': 'Available for freelance projects',
         'contact.followMe': 'Follow me on social media',
         'contact.downloadCV': 'Download CV',
         
         // Footer
         'footer.rights': 'All rights reserved.',
-        'footer.madeWith': 'Made with ❤️ using HTML, CSS and JavaScript'
+        'footer.madeWith': 'Developed with HTML, CSS, and JavaScript.',
+
+        // Skills Section (English)
+        'skills.languagesTitle': 'Languages and Technologies',
+        'skills.htmlcssjs': 'HTML, CSS, JavaScript',
+        'skills.soliditycairo': 'Solidity, Cairo',
+        'skills.react': 'React',
+        'skills.javapython': 'Java, Python',
+
+        'skills.web3Title': 'Web3 and Blockchain',
+        'skills.starkneteth': 'Starknet, Ethereum',
+        'skills.smartcontracts': 'Smart Contracts',
+        'skills.tokenization': 'Tokenization',
+
+        'skills.toolsTitle': 'Tools',
+        'skills.github': 'GitHub',
+        'skills.microsoft365': 'Microsoft 365',
+        'skills.planner': 'Planner',
+        'skills.eset': 'ESET Security',
+
+        'skills.databasesTitle': 'Databases',
+        'skills.mysql': 'MySQL',
+        'skills.oci': 'OCI Analytics',
+        'skills.documentation': 'Technical Documentation',
+
+        'skills.agileTitle': 'Agile Methodologies',
+        'skills.scrum': 'Scrum',
+        'skills.kanban': 'Kanban',
+        'skills.projectmgmt': 'Project Management',
+
+        'skills.softskillsTitle': 'Soft Skills',
+        'skills.problemSolving': 'Problem Solving',
+        'skills.learning': 'Continuous Learning',
+        'skills.communication': 'Effective Communication',
+        'skills.collaboration': 'Collaboration and Remote Work',
+
+        // Certificaciones
+        'cert.blockchain': '<strong>Blockchain, Solidity and Governance</strong> (CENFOTEC University)',
+        'cert.oracle': '<strong>React, MySQL, OCI, Java OOP, Spring Boot, Generative AI</strong> (Oracle Next Education + Alura Latam)',
+        'cert.python': '<strong>Python Essentials and Data Science Intro</strong> (CISCO)',
+        'cert.microsoft': '<strong>Microsoft 365</strong> (Udemy), <strong>Advanced Excel</strong> (Municipal Institute of Education of Cartago)',
+        'cert.english': '<strong>Digital Basic English – B2+</strong> (Municipal Institute of Education of Cartago)',
+
+        // Ejemplo de títulos de educación (si quieres traducirlos)
+        'education.diploma': 'Diploma in Information Technologies',
+        'education.technical': 'Technical Degree in Computer Equipment Maintenance and Repair',
+        'education.colegio': 'University College of Cartago',
+        'education.institutoJimenez': 'Jiménez Institute',
+
+        // Projects Section (English)
+        'project.starklotto.title': 'StarkLotto - Decentralized Lottery',
+        'project.starklotto.desc': 'The most innovative decentralized lottery on the Starknet blockchain. Play, win, and be part of the future.',
+        'project.starklotto.tech1': 'Starknet',
+        'project.starklotto.tech2': 'Blockchain',
+        'project.starklotto.tech3': 'React',
+        'project.starklotto.tech4': 'Web3',
+        'project.starklotto.tech5': 'Cairo',
+
+        // PetVerse
+        'project.petverse.title': 'PetVerse (Under Construction)',
+        'project.petverse.desc': 'Decentralized platform to connect pet owners with reliable local services (vets, walkers, stores, etc). Built with modern Web3 technologies on Starknet.',
+        'project.petverse.tech1': 'Starknet',
+        'project.petverse.tech2': 'Cairo',
+        'project.petverse.tech3': 'React',
+        'project.petverse.tech4': 'Next.js',
+        'project.petverse.tech5': 'Web3',
+
+        // Barbería Alura
+        'project.barberia.title': 'Barbería Alura',
+        'project.barberia.desc': 'First website developed as part of the Oracle Next Education (Alura Latam) program. Focused on HTML5 and CSS3, applying best practices in layout and styles.',
+        'project.barberia.tech1': 'HTML5',
+        'project.barberia.tech2': 'CSS3',
+
+        // Encriptador de texto
+        'project.encriptador.title': 'Text Encryptor',
+        'project.encriptador.desc': 'Web application to encrypt and decrypt text messages. Project carried out as part of the Oracle Next Education (Alura Latam) course.',
+        'project.encriptador.tech1': 'HTML',
+        'project.encriptador.tech2': 'CSS',
+        'project.encriptador.tech3': 'JavaScript',
+
+        // Mini Alura
+        'project.miniAlura.title': 'Mini Alura',
+        'project.miniAlura.desc': 'Mini course platform inspired by Alura. Practice project as part of the front-end training in Oracle Next Education.',
+        'project.miniAlura.tech1': 'HTML',
+        'project.miniAlura.tech2': 'CSS',
+
+        // Recetario con Vue.js
+        'project.recetario.title': 'Recipe Book with Vue.js',
+        'project.recetario.desc': 'Recipe application showing Vue.js connection with an external API. Created for a university workshop where I presented about the Vue.js framework.',
+        'project.recetario.tech1': 'Vue.js',
+        'project.recetario.tech2': 'JavaScript',
+        'project.recetario.tech3': 'CSS',
+
+        // Apeperia
+        'project.apeperia.title': 'Apeperia',
+        'project.apeperia.desc': 'Front-end project developed with a mobile-first approach as part of the Oracle Next Education front-end training. Simulates a mobile and web app development company, focusing on responsive design and user experience.',
+        'project.apeperia.tech1': 'HTML',
+        'project.apeperia.tech2': 'CSS',
+
+        // Fruta y Fruto
+        'project.frutaFruto.title': 'Fruta y Fruto',
+        'project.frutaFruto.desc': 'Front-end training project from Oracle Next Education, focused on CSS architecture and best practices. Healthy recipes and food utilization site.',
+        'project.frutaFruto.tech1': 'HTML',
+        'project.frutaFruto.tech2': 'CSS',
+
+        // TODO App
+        'project.todoApp.title': 'TODO App (DOM with JS)',
+        'project.todoApp.desc': 'Task list application to practice DOM manipulation with JavaScript. Project carried out as part of the Alura course.',
+        'project.todoApp.tech1': 'HTML',
+        'project.todoApp.tech2': 'CSS',
+        'project.todoApp.tech3': 'JavaScript',
+
+        // PetShop
+        'project.petShop.title': 'PetShop',
+        'project.petShop.desc': 'Web application for managing a pet shop, developed as part of the Alura Latam training. Allows registering products, clients, and performing form validations.',
+        'project.petShop.tech1': 'HTML',
+        'project.petShop.tech2': 'CSS',
+        'project.petShop.tech3': 'JavaScript',
+
+        // Rick & Morty API
+        'project.rickMorty.title': 'Rick & Morty API (React)',
+        'project.rickMorty.desc': 'Web application developed in React that consumes the public Rick & Morty API to display characters, episodes, and locations. Allows filtering and searching interactively.',
+        'project.rickMorty.tech1': 'React',
+        'project.rickMorty.tech2': 'JavaScript',
+        'project.rickMorty.tech3': 'API REST',
+
+        // Starklings-App
+        'project.starklings.title': 'Starklings-App (Cairo)',
+        'project.starklings.desc': 'Repository where I practice the Cairo language by solving Starklings exercises, a collection of challenges to learn Starknet development and blockchain concepts.',
+        'project.starklings.tech1': 'Cairo',
+        'project.starklings.tech2': 'Starknet',
+        'project.starklings.tech3': 'Blockchain',
+
+        // SpeedRun Ethereum
+        'project.speedRun.title': 'SpeedRun Ethereum',
+        'project.speedRun.desc': 'Intensive Web3 and smart contract development practice on Ethereum, using Scaffold-ETH 2, Hardhat, and Next.js. Includes NFT, wallet, and testnet deployment challenges. Project with its own frontend and smart contracts.',
+        'project.speedRun.tech1': 'Ethereum',
+        'project.speedRun.tech2': 'Solidity',
+        'project.speedRun.tech3': 'Next.js',
+        'project.speedRun.tech4': 'Hardhat',
+        'project.speedRun.tech5': 'Web3',
+
+        // San José Indoor Club
+        'project.sanJoseIndoorClub.title': 'San José Indoor Club - WebSite',
+        'project.sanJoseIndoorClub.desc': 'Full development of the institutional website for San José Indoor Club. Project carried out from scratch with modern technologies (TypeScript, Vite, Tailwind CSS), focused on providing an attractive and functional experience for club users. The project was not published in production.',
+        'project.sanJoseIndoorClub.tech1': 'TypeScript',
+        'project.sanJoseIndoorClub.tech2': 'Vite',
+        'project.sanJoseIndoorClub.tech3': 'Tailwind CSS',
+        'project.sanJoseIndoorClub.tech4': 'HTML',
+        'project.sanJoseIndoorClub.tech5': 'CSS',
+
+        // Learn-Solidity
+        'project.learnSolidity.title': 'Learn-Solidity',
+        'project.learnSolidity.desc': 'Repository where I practice and learn the Solidity language, developing and testing smart contracts on the Ethereum blockchain. Includes exercises and examples from courses and official documentation.',
+        'project.learnSolidity.tech1': 'Solidity',
+        'project.learnSolidity.tech2': 'Ethereum',
+        'project.learnSolidity.tech3': 'Smart Contracts',
+
+        // ALL IT CR
+        'project.allItCr.title': 'ALL IT CR - Business Platform',
+        'project.allItCr.desc': 'University graduation project: full development of the web platform for ALL IT CR, a company providing comprehensive technology, support, hosting, and electronic invoicing solutions. Includes design, development, and deployment of the institutional site and service catalog.',
+        'project.allItCr.tech1': 'HTML',
+        'project.allItCr.tech2': 'CSS',
+        'project.allItCr.tech3': 'JavaScript',
+        'project.allItCr.tech4': 'Web Hosting',
     }
 };
 
