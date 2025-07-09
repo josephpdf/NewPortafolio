@@ -52,14 +52,16 @@ function getEffectiveTheme() {
  * Función para aplicar el tema
  * @param {string} theme - 'dark', 'light' o 'system'
  */
-function applyTheme(theme) {
+function applyTheme(theme, save = true) {
     const effectiveTheme = theme === 'system' ? getEffectiveTheme() : theme;
     
     // Aplicar atributo al HTML
     htmlElement.setAttribute(THEME_ATTRIBUTE, effectiveTheme);
     
     // Guardar en localStorage
-    localStorage.setItem(THEME_STORAGE_KEY, theme);
+    if (save) {
+        localStorage.setItem(THEME_STORAGE_KEY, theme);
+    }
     
     // Actualizar ícono del botón
     updateToggleIcon(theme);
@@ -95,7 +97,7 @@ function toggleTheme() {
             break;
     }
     
-    applyTheme(newTheme);
+    applyTheme(newTheme, true); // Siempre guardar cuando el usuario cambia
 }
 
 /**
@@ -161,8 +163,12 @@ function syncWithSystemPreference() {
  */
 function initThemeSystem() {
     // Aplicar tema inicial
-    const initialTheme = getCurrentTheme();
-    applyTheme(initialTheme);
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+    if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light' || savedTheme === 'system')) {
+        applyTheme(savedTheme, true); // Respeta preferencia guardada
+    } else {
+        applyTheme('system', false); // Aplica sistema pero NO guarda
+    }
     
     // Configurar event listener para el botón
     if (darkModeToggle) {
